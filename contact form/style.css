@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #E0F1E7;
+}
+input,textarea{
+    outline: none;
+}
+
+.form-container {
+    display: flex;
+    min-height: 100vh;
+}
+.tik{
+    display: inline;
+    border-radius: 50%;
+    color: #0C7D69;
+    margin-inline: 8px;
+}
+.successMsg{
+    background-color: #033e33;
+    border-radius: 10px;
+    color: #fff;
+    height: 120px;
+    padding: 10px 20px  ;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 10%;
+    opacity: 0;
+    /* animation: successMsgFade 1s ease-out forwards;  */
+    display: none; 
+}
+@keyframes successMsgFade{
+    0%{
+        opacity: 0;
+        top: 0;
+
+    }
+    100%{
+        opacity: 1;
+        top: 10%;
+        
+    }
+}
+
+.successMsg.show{
+    display: block;
+    animation: successMsgFade 1s ease-in-out forwards; 
+}
+
+
+
+
+
+
+form {
+    margin: auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 20px;
+    padding-top: 1rem;
+    box-shadow: 0 0 30px 1px rgba(128, 128, 128, 0.352);
+}
+
+.input-field {
+    width: 100%;
+    min-height: 3rem;
+    margin-block: 1rem;
+    border-radius: 7px;
+    border: 2px solid gray;
+    font-size: 1.1rem;
+}
+.input-field:hover{
+    border-color: #0C7D69;
+    cursor: pointer;
+
+}
+
+.query, .name {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.fname, .lname {
+    width: 48%;
+}
+
+input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    accent-color:#0C7D69;
+    cursor: pointer;
+}
+
+.query-option {
+    display: flex;
+    align-items: center;
+
+    width: 48%;
+    border: 2px solid gray  ;
+    min-height: 3rem;
+    border-radius: 7px;
+    margin-top: 10px;
+    cursor: pointer;
+
+   
+  
+   
+}
+.query-option:hover{
+    border-color: #0C7D69;
+
+}
+
+.query-option input{
+    margin-left: 10px;
+    
+
+}
+
+.query-option input[type="radio"] {
+    margin-right: 10px;
+   
+    
+}
+
+.btn {
+    background-color: #0C7D69;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #033e33;
+}
+
+span{
+    display: block;
+    margin: -13px 0 10px 0;
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 500px){  
+    
+    form{
+        margin: 15px;
+        
+    }
+    .name{
+        display: flex;
+
+        flex-direction: column;
+    }
+    .name .fname, .name .lname{
+        width: 100%;
+    }
+    .query{
+       flex-direction: column;
+       
+    }
+    .query-option{
+        width: 100%;
+    }
+    #message{
+        height: 200px;
+    }
+   
+}
+
+

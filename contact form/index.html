@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+
+            <div class="successMsg ">
+                <h2> <span class="tik">☑</span>Message sent</h2>
+                <p>Thanks for completing the form. we'll be in touch soon!</p>
+
+            </div>
+            
+
+
+            <form id="myform" action="" onsubmit="return submitmsg()">
+
+                <h1>Contact Us</h1>
+                <div class="name">
+                    <div class="fname">
+                        <label for="fname">First Name</label>
+                        <input onkeyup="validatesName()" type="text" id="fname" class="input-field">
+                        <span id="fname-Error-msg" >Required</span>
+                    </div>
+                    <div class="lname">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" class="input-field">
+                    </div>
+                </div>
+
+
+
+
+
+                <label for="email">Email Address</label>
+                <input onkeyup="validateEmail()" spellcheck="false" type="email" id="email" required class="input-field">
+                <span id="error-msg"></span>
+
+
+
+
+
+
+
+
+                <label for="query-type">Query Type</label>
+
+                <div class="query">
+                    <div class="query-option checkQuery1">
+                        <input type="radio" id="query1"  >
+                        <label for="query1">General Enquiry</label>
+                    </div>
+
+                    <div class="query-option checkQuery2">
+                        <input type="radio" id="query2" >
+                        <label for="query2">Support Request</label>
+
+                    </div>  
+                </div>
+
+
+
+
+
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" class="input-field"></textarea>
+
+                <div>
+                    <input type="checkbox" id="policy">
+                    <label for="policy">I consent to being contacted by them</label>
+                </div>
+
+                <input disabled  type="submit" class="input-field btn" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- nippon;
+
+carear objective
+extra curriculam activity,skill
+technical qulalification- bca,cgpa,pursuing
+General qulalification - 12th
+personal information-address,email,contact,
+hobbies -->
+
